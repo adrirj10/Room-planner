@@ -1,0 +1,26 @@
+{
+  "name": "room-planner",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "parcel": "^2.0.0",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^4.0.7"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.7",
+    "@tailwindcss/vite": "^4.0.7",
+    "interactjs": "^1.10.27",
+    "tippy.js": "^6.3.7"
+  }
+}

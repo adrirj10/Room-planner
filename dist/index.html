@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><link rel="stylesheet" href="/index.2212206d.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador de habitaciones</title>
+    <link rel="stylesheet" href="/index.1568f793.css">
+    <link rel="icon" href="/favicon.8b2f57bf.png" type="image/x-icon">
+    <style>body {
+  color: #ececec;
+  background-color: #121212;
+}
+
+.contenedor {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+input, button {
+  color: #fff;
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+button:hover {
+  background-color: #3c3c3c;
+}
+
+.border-dashed {
+  border-color: #444;
+}
+
+.form-item {
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+</style>
+    <!-- Preconectar a dominios de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <!-- Cargar fuentes de manera eficiente -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div class="contenedor text-center p-5 border shadow-lg rounded-lg w-full max-w-6xl mx-auto h-screen flex flex-col justify-center items-center">
+        <h1 class="text-3xl font-bold mb-5">Planificador de habitaciones simple</h1>
+        <form id="formulario-rectangulo" class="mb-5 flex flex-wrap justify-center gap-2">
+            <div class="form-item">
+                <label for="ancho">Ancho (cm):</label>
+                <input type="number" id="ancho" min="1" aria-label="Ancho en centímetros" class="p-1 w-32 text-center border rounded" style="height: 30px">
+            </div>
+            <div class="form-item">
+                <label for="alto">Alto (cm):</label>
+                <input type="number" id="alto" min="1" aria-label="Alto en centímetros" class="p-1 w-32 text-center border rounded" style="height: 30px">
+            </div>
+            <div class="form-item">
+                <label for="color">Color:</label>
+                <input type="color" id="color" aria-label="Color del rectángulo" class="p-1 w-32 text-center border rounded" style="height: 30px">
+            </div>
+            <button type="button" id="crear-rectangulo" aria-label="Crear Rectángulo" class="bg-green-500 text-white py-3 px-6 rounded hover:bg-green-600 transition duration-300 mt-2 h-14">Crear Rectángulo</button>
+            <button type="button" id="modo-eliminar" aria-label="Modo Eliminar" class="bg-green-500 text-white py-3 px-6 rounded hover:bg-green-600 transition duration-300 mt-2 h-14">Modo Eliminar</button>
+        </form>
+        <div id="lienzo" class="mt-5 flex justify-center items-center h-full w-full max-w-6xl border border-dashed relative overflow-hidden bg-gray-800"></div>
+    </div>
+   
+    <script src="/index.f5c48570.js" defer=""></script>
+</body>
+</html>
