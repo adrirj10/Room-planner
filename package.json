@@ -1,11 +1,9 @@
 {
   "name": "room-planner",
   "version": "1.0.0",
-  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.html",
-    "start": "parcel src/index.html"
+    "start": "cd src && http-server"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +11,6 @@
   "description": "",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "parcel": "^2.0.0",
     "postcss": "^8.4.6",
     "tailwindcss": "^4.0.7"
   },
